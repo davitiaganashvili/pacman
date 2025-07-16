@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class pacman : MonoBehaviour
+public class Pacman : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Start icalled once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,11 +23,13 @@ public class GameManager : MonoBehaviour
         {
             DestroyImmediate(gameObject);
         }
-        else
+        else 
         {
+            
             Instance = this;
         }
     }
+
 
     private void OnDestroy()
     {
@@ -122,7 +125,7 @@ public class GameManager : MonoBehaviour
     {
         int points = ghost.points * ghostMultiplier;
         SetScore(score + points);
-
+        
         ghostMultiplier++;
     }
 
@@ -158,6 +161,7 @@ public class GameManager : MonoBehaviour
             if (pellet.gameObject.activeSelf)
             {
                 return true;
+                
             }
         }
 
